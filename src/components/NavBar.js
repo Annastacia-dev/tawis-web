@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { RiMenuFill,RiCloseLine} from 'react-icons/ri';
-import { GiFlowerEmblem } from 'react-icons/gi';
+import { IoFlowerOutline } from 'react-icons/io5';
 import { CgShoppingBag } from 'react-icons/cg';
 import { BsMoonStars } from 'react-icons/bs';
 
@@ -17,8 +17,8 @@ const Navbar = () => {
           <div className="flex space-x-64">
             <div className='flex items-center justify-center'>
                 <Link href="/" className="flex items-center gap-3 py-4 px-2">
-                    <GiFlowerEmblem className='text-2xl' />
-                    <span className="font-medium text-xl tracking-wide">Tawi&apos;s Bloom</span>
+                    <IoFlowerOutline className='w-8 h-8' />
+                    <span className="font-bold tracking-wide">Tawi&apos;s Bloom</span>
                 </Link>
             </div>
           <div className="-mr-2 flex items-center sm:hidden">
