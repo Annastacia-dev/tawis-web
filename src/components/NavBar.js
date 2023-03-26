@@ -11,7 +11,7 @@ const Navbar = () => {
   const toggleNav = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white shadow-sm p-">
+    <nav className="bg-white shadow-sm w-full">
       <div className="container mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex space-x-64">
