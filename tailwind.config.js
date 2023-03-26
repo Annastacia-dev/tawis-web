@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
+        oregano: ['Oregano', 'cursive'],
       }
     }
   },
