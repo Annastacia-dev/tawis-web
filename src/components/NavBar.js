@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const NavBar = () => {
     return(
-        <div> NavBar </div>
+        <div className='bg-green-500'> NavBar </div>
     )
 }
 
