@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from 'next/image';
 import { RiMenuFill,RiCloseLine} from 'react-icons/ri';
 import { IoFlowerOutline } from 'react-icons/io5';
 import { CgShoppingBag } from 'react-icons/cg';
@@ -12,14 +13,13 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="bg-white shadow-sm w-full">
+    <nav className="bg-white  w-full">
       <div className="container mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex space-x-64">
             <div className='flex items-center justify-center'>
                 <Link href="/" className="flex items-center gap-3 py-4 px-2">
-                    <IoFlowerOutline className='w-8 h-8' />
-                    <span className="font-bold tracking-wide">Tawi&apos;s Bloom</span>
+                    <Image src='/logo.jpg' width={300} height={100} alt='logo' className="mt-16 -mr-24"/>
                 </Link>
             </div>
           <div className="hidden md:flex items-center space-x-12">

@@ -5,8 +5,6 @@ import { BsArrowRight,BsArrowLeft } from 'react-icons/bs'
 
 const Hero = () => {
 
-console.log(images)
-  // change image after every 5 seconds 
   const [current, setCurrent] = useState(0)
   const length = images.length
 
@@ -30,7 +28,7 @@ console.log(images)
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-24">
       <div className="col-span-1">
         <h1 className="text-4xl font-bold font-playfair leading-[50px] tracking-wide">Welcome to Tawi&apos;s Bloom<span></span>    Kisumu&apos;s first luxury florist!</h1>
         <p className="text-sm mt-6 leading-8">
@@ -50,7 +48,7 @@ console.log(images)
               <div className={index === current ? 'slide active' : 'slide'} key={index}>
                 {index === current && (
                   <Image src={image.url} alt={image.alt} width={320} height={320}
-                  className="h-[200px] w-[200px] sm:h-[450px] sm:w-[300px] object-cover"
+                  className="h-[300px] w-[300px] sm:h-[450px] sm:w-[300px] object-cover"
                    />
                 )}
               </div>
