@@ -48,7 +48,7 @@ const Hero = () => {
               <div className={index === current ? 'slide active' : 'slide'} key={index}>
                 {index === current && (
                   <Image src={image.url} alt={image.alt} width={320} height={320}
-                  className="h-[300px] w-[300px] sm:h-[450px] sm:w-[300px] object-cover"
+                  className="h-[400px] w-[250px] mt-4 sm:mt-0 ml-4 sm:ml-0sm:h-[450px] sm:w-[300px] object-cover"
                    />
                 )}
               </div>
