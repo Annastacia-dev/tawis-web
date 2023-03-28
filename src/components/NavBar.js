@@ -11,6 +11,7 @@ const Navbar = () => {
   const toggleNav = () => setIsOpen(!isOpen);
 
   return (
+    <>
     <nav className="bg-white shadow-sm w-full">
       <div className="container mx-auto px-4">
         <div className="flex justify-between h-16">
@@ -21,20 +22,6 @@ const Navbar = () => {
                     <span className="font-bold tracking-wide">Tawi&apos;s Bloom</span>
                 </Link>
             </div>
-          <div className="-mr-2 flex items-center sm:hidden">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-              onClick={toggleNav}
-            >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <RiCloseLine className="h-6 w-6" aria-hidden="true" />
-              ) : (
-                <RiMenuFill className="h-6 w-6" aria-hidden="true" />
-              )}
-            </button>
-          </div>
           <div className="hidden md:flex items-center space-x-12">
             <Link href="/#about">About </Link>
             <Link href="/blog">Blog</Link>
@@ -48,16 +35,34 @@ const Navbar = () => {
         </div>
         </div>
       </div>
-      {isOpen && (
+    </nav>
+    <div className="sm:hidden block z-10">
+            <button
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md"
+              onClick={toggleNav}
+            >
+              <span className="sr-only">Open main menu</span>
+              {isOpen ? (
+                <RiCloseLine className="h-6 w-6" aria-hidden="true" />
+              ) : (
+                <RiMenuFill className="h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+    {isOpen && (
         <div className="sm:hidden w-full h-screen flex justify-center items-center duration-300 ease-in-out">
           <ul className="pt-2 pb-3 space-y-1">
-            <Link href="/" className="block px-3 py-2">Home</Link>
-            <Link href="/about" className="block px-3 py-2">About</Link>
-            <Link href="/contact" className="block px-3 py-2">Contact</Link>
+          <Link href="/cart" className='block px-3 py-2'><CgShoppingBag className='text-2xl ml-4' /></Link>
+            <Link href="/" className="text-xl block px-3 py-2">Home</Link>
+            <Link href="/about" className="text-xl block px-3 py-2">About</Link>
+            <Link href="/about" className="text-xl block px-3 py-2">Blog</Link>
+            <Link href="/contact" className="text-xl block px-3 py-2">Contact</Link>
+            <Link href="/shop" className="text-xl block px-3 py-2">Shop</Link>
           </ul>
         </div>
       )}
-    </nav>
+    </>  
   );
 };
 
