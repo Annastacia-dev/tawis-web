@@ -48,7 +48,7 @@ const Hero = () => {
               <div className={index === current ? 'slide active' : 'slide'} key={index}>
                 {index === current && (
                   <Image src={image.url} alt={image.alt} width={320} height={320}
-                  className="h-[400px] w-[250px] mt-4 sm:mt-0 ml-4 sm:ml-0sm:h-[450px] sm:w-[300px] object-cover"
+                  className="h-[400px] w-[250px] mt-4 sm:mt-0 ml-4 sm:ml-0 sm:h-[450px] sm:w-[300px] object-cover"
                    />
                 )}
               </div>
@@ -57,8 +57,8 @@ const Hero = () => {
           )
         }
         <div className="absolute bottom-[40%] right-1 sm:right-16 flex flex-col gap-8 justify-center items-center">
-          <BsArrowRight className='h-6 w-6 ml-2 cursor-pointer' onClick={nextSlide} />
-          <BsArrowLeft className='h-6 w-6 ml-2 cursor-pointer' onClick={prevSlide} />
+          <BsArrowRight className='h-6 w-6  cursor-pointer' onClick={nextSlide} />
+          <BsArrowLeft className='h-6 w-6  cursor-pointer' onClick={prevSlide} />
         </div>
       </div>
     </div>

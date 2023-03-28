@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const About = () => {
   return (
-    <div className='m:mt-32 mt-20'>
+    <div className='mt-20'>
       <h1 className='uppercase text-4xl font-playfair text-center'>About</h1>
-      <hr className='h-0.5 my-8 bg-black border-0 rounded'></hr>
+      <hr className='h-0.5 my-8 bg-black border-0 rounded'/>
       <p className="text-sm mt-6 leading-8">
         Welcome to Tawi&apos; Bloom &#8208; Kisumu&apos; first luxury florist. Our motto is &quot;To the Romance of Life,&quot; and we&apos;re passionate about putting smiles on people&apos; faces with our beautiful flower arrangements and gifts.
         Our story began when our founder, Roda, noticed a niche in Kisumu&apos; floral industry. She received boring and not-so-fresh flowers from her boyfriend and decided to take matters into her own hands. Tawi&apos; Bloom was born from her love for flowers and the desire to provide customers with the highest quality products and services.
