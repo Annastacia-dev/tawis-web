@@ -53,12 +53,11 @@ const Navbar = () => {
     {isOpen && (
         <div className="sm:hidden w-full h-screen flex justify-center items-center duration-300 ease-in-out">
           <ul className="pt-2 pb-3 space-y-1">
-          <Link href="/cart" className='block px-3 py-2'><CgShoppingBag className='text-2xl ml-4' /></Link>
-            <Link href="/" className="text-xl block px-3 py-2">Home</Link>
-            <Link href="/about" className="text-xl block px-3 py-2">About</Link>
-            <Link href="/about" className="text-xl block px-3 py-2">Blog</Link>
-            <Link href="/contact" className="text-xl block px-3 py-2">Contact</Link>
-            <Link href="/shop" className="text-xl block px-3 py-2">Shop</Link>
+          <Link href="/cart" className='block px-3 py-2' onClick={() => {setIsOpen(false)}}><CgShoppingBag className='text-2xl ml-4' /></Link>
+            <Link href="/#about" className="text-xl block px-3 py-2" onClick={() => {setIsOpen(false)}}>About</Link>
+            <Link href="/blog" className="text-xl block px-3 py-2" onClick={() => {setIsOpen(false)}}>Blog</Link>
+            <Link href="/contact" className="text-xl block px-3 py-2" onClick={() => {setIsOpen(false)}}>Contact</Link>
+            <Link href="/shop" className="text-xl block px-3 py-2" onClick={() => {setIsOpen(false)}}>Shop</Link>
           </ul>
         </div>
       )}

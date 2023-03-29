@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "url": "/weekly-offer.jpg",
+    "name":"flower subscription",
+    "price": 12000,
+    "alt":"hand holding peach flower bouquet"
+  },
+  {
+    "id": 2,
+    "url": "/weekly-offer2.jpg",
+    "name":"flower subscription",
+    "price": 12000,
+    "alt":"hand holding peach flower bouquet"
+  }
+]

@@ -35,7 +35,7 @@ const Services = () => {
         <div className=''>
           <div className='flex flex-col gap-4  border gray-500 p-4 rounded-md'>
             <div className='flex  flex-col justify-center items-center'>
-              <Image src='/flower.png' alt='flower' width={200} height={200} className='object-cover' />
+              <Image src='/grave.png' alt='flower' width={200} height={200} className='object-cover' />
                 <p className='text-2xl font-playfair font-italic'>Funeral Services.</p>
                 <p className='text-sm text-left mt-6'>
                 We understand how difficult it can be to say goodbye to a loved one. Our team can provide compassionate and personalized funeral services, including sympathy arrangements and casket sprays. We offer a range of designs to suit different tastes and budgets.
