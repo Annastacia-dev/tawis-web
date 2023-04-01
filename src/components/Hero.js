@@ -28,8 +28,8 @@ const Hero = () => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-24">
-      <div className="col-span-1">
+    <header className="grid grid-cols-1 md:grid-cols-2" id="header">
+      <div className="col-span-1 mt-32">
         <h1 className="text-4xl font-bold font-playfair leading-[50px] tracking-wide">Welcome to Tawi&apos;s Bloom<span></span>    Kisumu&apos;s first luxury florist!</h1>
         <p className="text-sm mt-6 leading-8">
           We believe that flowers and gifts have the power to brighten someone&apos;s day and bring joy to any occasion. That&apos;s why we&apos;re dedicated to providing the highest quality products and services to our customers.
@@ -38,10 +38,10 @@ const Hero = () => {
         </p>
         <button className="flex justify-center items-center gap-2 border border-black bg-transparent outline-none py-4 px-8 mt-10 hover:bg-black hover:text-white hover:transition duration-300">
           <span className="text-md font-light uppercase">Shop Now</span>
-          <BsArrowRight className='text-sm ml-2' />
+          <BsArrowRight className='text-sm ml-2 animate-bounce' />
         </button>
       </div>
-      <div className="col-span-1 ml-0 sm:ml-28 sm:mt-0 mt-8 relative">
+      <div className="col-span-1 ml-0 sm:ml-28 sm:mt-32 mt-8 relative">
         {
           images.map((image, index) => {
             return (
@@ -61,7 +61,7 @@ const Hero = () => {
           <BsArrowLeft className='h-6 w-6  cursor-pointer' onClick={prevSlide} />
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

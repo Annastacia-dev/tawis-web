@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "url": "/weekly-offer.jpg",
+    "name":"flower subscription",
+    "price": 12000,
+    "alt":"12,000 Kenyan shillings monthly bouquet flower subscription"
+  },
+  {
+    "id": 2,
+    "url": "/weekly-offer2.jpg",
+    "name":"flower subscription",
+    "price": 4000,
+    "alt":"4,000 Kenyan shillings monthly bouquet flower subscription"
+  },
+  {
+    "id": 3,
+    "url": "/events.jpg",
+    "name":"Centre pieces for events",
+    "price": 3000,
+    "alt":"events center piece bouquet"
+  },
+  {
+    "id": 4,
+    "url": "/wreaths.jpg",
+    "name":"Wreaths",
+    "price": 2500,
+    "alt":"events center piece bouquet"
+  },
+  {
+    "id": 5,
+    "url": "/mega.jpg",
+    "name":"Mega large mixed bouquet",
+    "price": 4500,
+    "alt":"mega large mixed bouquet"
+  },
+  {
+    "id": 6,
+    "url": "/standard.jpg",
+    "name":"Standard mixed bouquet",
+    "price": 1500,
+    "alt":"standard mixed bouquet"
+  }
+]
