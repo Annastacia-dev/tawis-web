@@ -38,7 +38,7 @@ const Hero = () => {
         </p>
         <button className="flex justify-center items-center gap-2 border border-black bg-transparent outline-none py-4 px-8 mt-10 hover:bg-black hover:text-white hover:transition duration-300">
           <span className="text-md font-light uppercase">Shop Now</span>
-          <BsArrowRight className='text-sm ml-2' />
+          <BsArrowRight className='text-sm ml-2 animate-bounce' />
         </button>
       </div>
       <div className="col-span-1 ml-0 sm:ml-28 sm:mt-0 mt-8 relative">
