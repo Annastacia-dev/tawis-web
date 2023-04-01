@@ -13,7 +13,6 @@ const About = () => {
         What sets us apart? Our commitment to excellence in all aspects of our business. We&apos;ve received recognition and awards for our outstanding floral designs and exceptional customer service. We&apos;re always looking for ways to innovate and improve our services, so you can trust that you&apos;re getting the best of the best when you choose Tawi&apos;s Bloom.
         Thank you for considering Tawi&apos;s Bloom for your floral needs. We look forward to creating something beautiful for you!
       </p>
-      {/* three grids of images */}
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-10'>
           <div className='col-span-1'>
             <Image src='/3.jpeg' alt='about1' width={320} height={320}

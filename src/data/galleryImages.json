@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "url": "/g-1.jpg",
+    "alt":"hand holding peach flower bouquet"
+  },
+  {
+    "id": 2,
+    "url": "/g-2.jpg",
+    "alt":"vase of multi-colored flowers"
+  },
+  {
+    "id": 3,
+    "url": "/g-3.jpg",
+    "alt":"small buckets of flowers"
+  },
+  {
+    "id": 4,
+    "url": "/g-4.jpg",
+    "alt":"female and male hands holding flowers"
+  },
+  {
+    "id": 5,
+    "url": "/g-5.jpg",
+    "alt":"flower bar"
+  },
+  {
+    "id": 6,
+    "url": "/g-6.jpg",
+    "alt":"flower bar"
+  },
+  {
+    "id": 7,
+    "url": "/g-7.jpg",
+    "alt":"flower bar"
+  }
+]
