@@ -6,7 +6,7 @@ import { numberDelimeter } from '@/utils/numberDelimeter'
 
 const BestSellers = () => {
   return (
-    <div className='relative mt-20'>
+    <div className='relative mt-20' id="best-sellers">
       <div className='sm:absolute sm:top-72 flex flex-col gap-4'>
         <h1 className='font-playfair capitalize text-3xl'>Best Sellers</h1>
         <Link className='uppercase underline' href='/shop'> Shop all &rarr;</Link>

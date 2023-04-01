@@ -28,7 +28,7 @@ const Hero = () => {
   }
 
   return (
-    <header className="grid grid-cols-1 md:grid-cols-2">
+    <header className="grid grid-cols-1 md:grid-cols-2" id="header">
       <div className="col-span-1 mt-32">
         <h1 className="text-4xl font-bold font-playfair leading-[50px] tracking-wide">Welcome to Tawi&apos;s Bloom<span></span>    Kisumu&apos;s first luxury florist!</h1>
         <p className="text-sm mt-6 leading-8">

@@ -12,37 +12,37 @@ const Gallery = () => {
       setCurrent(0)
       const interval = setInterval(() => {
         setCurrent(current => (current + 1) % length)
-      }, 6000);
+      }, 9000);
       return () => clearInterval(interval);
     }, [length])
 
     return (
-      <div className='relative'>
+      <div className='relative' id="gallery">
        <div className='flex flex-col sm:gap-4 gap-2 sm:mt-24 mt-[2400px] sm:ml-0 ml-4'>
          <div className='grid grid-cols-2 sm:grid-cols-3 sm:gap-1 gap-2 sm:w-9/12'>
             <div className="col-span-1">
               <Image src={galleryImages[current].url} alt={galleryImages[current].alt} 
-               width={320} height={320}/>
+               width={320} height={320} className='transition duration-500 ease-in-out transform hover:scale-105' />
             </div>
             <div className="col-span-1">
-              <Image src={galleryImages[(current + 1) % length].url} alt={galleryImages[(current + 1) % length].alt} width={320} height={320} />
+              <Image src={galleryImages[(current + 1) % length].url} alt={galleryImages[(current + 1) % length].alt} width={320} height={320} className='transition duration-500 ease-in-out transform hover:scale-105' />
             </div>
             <div className="col-span-1">
-              <Image src={galleryImages[(current + 2) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} />
+              <Image src={galleryImages[(current + 2) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} className='transition duration-500 ease-in-out transform hover:scale-105' />
             </div>
          </div>
          <div className='grid grid-cols-2 sm:grid-cols-4 sm:gap-1 gap-2 sm:w-9/12'>
          <div className="col-span-1">
-              <Image src={galleryImages[(current + 3) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} />
+              <Image src={galleryImages[(current + 3) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} className='transition duration-500 ease-in-out transform hover:scale-105' />
             </div>
             <div className="col-span-1">
-              <Image src={galleryImages[(current + 4) % length].url} alt={galleryImages[(current + 1) % length].alt} width={320} height={320} className="sm:mt-0 -mt-36" />
+              <Image src={galleryImages[(current + 4) % length].url} alt={galleryImages[(current + 1) % length].alt} width={320} height={320} className="sm:mt-0 -mt-36 transition duration-500 ease-in-out transform hover:scale-105" />
             </div>
             <div className="col-span-1">
-              <Image src={galleryImages[(current + 5) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} />
+              <Image src={galleryImages[(current + 5) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} className='transition duration-500 ease-in-out transform hover:scale-105' />
             </div>
             <div className="col-span-1">
-              <Image src={galleryImages[(current + 6) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} className="sm:mt-0 -mt-36" />
+              <Image src={galleryImages[(current + 6) % length].url} alt={galleryImages[(current + 2) % length].alt} width={320} height={320} className="sm:mt-0 -mt-36 transition duration-500 ease-in-out transform hover:scale-105" />
             </div>
          </div>
        </div>
