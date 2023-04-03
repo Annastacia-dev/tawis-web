@@ -10,7 +10,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
   return (
-    <nav className='bg-white fixed w-full shadow-sm flex space-x-64  p-4 items-center'>
+    <nav className='bg-white fixed w-full shadow-sm flex space-x-64  p-4 items-center z-10'>
       <div className='flex items-center'>
         <Image src='/logo.png' alt = "logo" width={40} height={40}/>
       </div>

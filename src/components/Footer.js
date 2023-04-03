@@ -6,9 +6,9 @@ import { RiCopyrightLine } from 'react-icons/ri'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col mt-20 text-md'>
+    <div className='flex flex-col mt-20 sm:text-md text-xs' id="contact">
         <div className='w-full bg-white'>
-          <div className='flex justify-center items-center gap-8'>
+          <div className='flex justify-center items-center '>
             <Link href="/privacypolicy" className='capitalize mr-4'>privacy policy</Link>
             <div className="h-2 w-2 rounded-full bg-black"></div>
             <Link href="/termsandconditions" className='capitalize mx-4'>terms &amp; conditions</Link>
@@ -31,7 +31,7 @@ const Footer = () => {
               <MdWhatsapp className='text-2xl' />
             </Link>
           </div> 
-          <div className='flex justify-center items-center gap-8 mt-10 mb-6'>
+          <div className='flex justify-center items-center sm:gap-8 gap-3 mt-10 mb-6'>
             <p className='uppercase'>tawi&apos;s bloom</p>
             <p className='uppercase'>|</p>
             <p className='uppercase flex justify-center items-center gap-3'>
